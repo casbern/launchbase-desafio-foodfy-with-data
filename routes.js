@@ -1,6 +1,6 @@
 const express = require('express')
 const routes = express.Router()
-const recipeRoutes = require('./controllers/recipes.js')
+const adminRoutes = require('./controllers/admin.js')
 const websiteRoutes = require('./controllers/website.js')
 
 
@@ -12,10 +12,10 @@ routes.get('/recipes', websiteRoutes.recipes)
 routes.get('/recipes/:index', websiteRoutes.recipe)
 
 // ADMINISTRATIVE AREA
-routes.get("/admin/recipes", recipeRoutes.index)
-routes.get("/admin/recipes/create", recipeRoutes.create)
-routes.get("/admin/recipes/:id", recipeRoutes.show)
-routes.get("/admin/recipes/:id/edit", recipeRoutes.edit)
-routes.post("/admin/recipes", recipeRoutes.post)
-routes.put("/admin/recipes", recipeRoutes.put)
-routes.delete("/admin/recipes", recipeRoutes.delete)
+routes.get("/admin/recipes", adminRoutes.index)
+routes.get("/admin/recipes/create", adminRoutes.create)
+routes.get("/admin/recipes/:id", adminRoutes.show)
+routes.get("/admin/recipes/:id/edit", adminRoutes.edit)
+routes.post("/admin/recipes", adminRoutes.post)
+routes.put("/admin/recipes", adminRoutes.put)
+routes.delete("/admin/recipes", adminRoutes.delete)

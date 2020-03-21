@@ -3,7 +3,6 @@ const nunjucks = require('nunjucks')
 const routes = require('./routes.js')
 
 const server = express()
-const recipes = require("./data")
 
 server.use(express.static('public'))
 server.use(routes)
