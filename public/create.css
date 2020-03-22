@@ -43,8 +43,9 @@
   margin-bottom: 30px;
 }
 
-.admin-wrapper .last{
-  height: 300px; /*how to take only the last input??*/
+.admin-wrapper textarea {
+  height: 300px;
+  width: 100%;
 }
 
 .admin-wrapper button {
