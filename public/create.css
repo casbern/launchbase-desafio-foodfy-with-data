@@ -25,7 +25,7 @@
   text-decoration: none;
 }
 
-.admin-wrapper input {
+.admin-wrapper input, textarea {
   display: block;
   border: 1px solid  #DDDDDD;
   background: #FFFFFF;
