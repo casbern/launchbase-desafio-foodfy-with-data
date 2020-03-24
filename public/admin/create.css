@@ -26,8 +26,16 @@
   height: 40px;
   font-size: 16px;
   color: var(--color-darker-grey);
-  font-weight: bold;
   outline: none;
+  padding-left: 10px;
+}
+
+.admin-wrapper textarea {
+  padding-top: 10px;
+}
+
+.admin-wrapper input::placeholder {
+  font-size: 14px;
 }
 
 .admin-wrapper .item {

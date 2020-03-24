@@ -2,17 +2,19 @@
   "recipes": [
     {
       "id": 1,
-      "recipe_avatar": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHamburger&psig=AOvVaw11vRSmLoagKnetjuuEniqs&ust=1585162799744000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPD2-N_ls-gCFQAAAAAdAAAAABAD",
+      "recipe_avatar": "https://assets.biggreenegg.eu/app/uploads/2019/03/28145521/topimage-classic-hamburger-2019m04-800x534.jpg",
+      "recipe_name": "Hamburguer",
+      "recipe_author": "Maria da Silva",
       "ingredients": [
-        "pao",
-        "quijo",
-        "hamburguer"
+        "Pão",
+        "Queijo",
+        "Carne"
       ],
       "preparation": [
-        "misture tudo",
-        "ponha no pao"
+        "Corte o pão",
+        "Coloque os ingredientes dentro"
       ],
-      "extra_information": "O hamburguer surfiu em 2019"
+      "extra_information": "Hamburguer é uma receita muito antiga e gostoso."
     }
   ]
 }

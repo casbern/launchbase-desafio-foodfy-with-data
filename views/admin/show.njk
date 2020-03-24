@@ -8,28 +8,15 @@
 
 <form action="/admin/recipes" method="post">
 
-<h3>Criando uma receita</h3>
+<h3>Criando receita</h3>
 
-<button type="submit" class="save-recipe">Salvar receita</button>
+<button type="submit" class="save-recipe">Editar receita</button>
 
 <div class="item">
 <div>Imagem da receita
 <input type="url" name="recipe_avatar" placeholder="http://">
 </div>
 </div>
-
-<div class="item">
-<div>Nome da Receita
-<input type="text" name="recipe_name" placeholder="Ex: Torta de Maça">
-</div>
-</div>
-
-<div class="item">
-<div>Autor da Receita
-<input type="text" name="recipe_author" placeholder="Ex: João Silva">
-</div>
-</div>
-
 
 <div class="item" id="ingredients">
 <div class="ingredient">Ingredientes
@@ -56,3 +43,4 @@
 <script src="/admin/add-steps.js"></script>
 
 {% endblock %}
+

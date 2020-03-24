@@ -21,6 +21,8 @@ exports.post = function(req, res) {
 
   let {
     recipe_avatar,
+    recipe_name,
+    recipe_author,
     ingredients,
     preparation,
     extra_information
@@ -38,6 +40,8 @@ exports.post = function(req, res) {
   data.recipes.push({
     id,
     recipe_avatar,
+    recipe_name,
+    recipe_author,
     ingredients,
     preparation,
     extra_information
@@ -49,12 +53,24 @@ exports.post = function(req, res) {
     }
     return res.redirect("/recipes")
   })
-
-  //return res.send(req.body)
 }
 
 exports.show = function(req, res) {
-  return res.send("I will show a recipe")
+  const {id} = req.params
+
+  const foundRecipe = data.recipes.find(function(recipe) {
+    return recipe.id == id
+  })
+
+  if (!foundRecipe) {
+    return res.send("Recipe was not found!")
+  }
+
+  const recipe = {
+    ...foundRecipe
+  }
+
+  return res.render("admin/show")
 }
 
 exports.edit = function(req, res) {
