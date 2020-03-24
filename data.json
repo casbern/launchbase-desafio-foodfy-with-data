@@ -1,3 +1,18 @@
 {
-  "recipes": []
+  "recipes": [
+    {
+      "id": 1,
+      "recipe_avatar": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHamburger&psig=AOvVaw11vRSmLoagKnetjuuEniqs&ust=1585162799744000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPD2-N_ls-gCFQAAAAAdAAAAABAD",
+      "ingredients": [
+        "pao",
+        "quijo",
+        "hamburguer"
+      ],
+      "preparation": [
+        "misture tudo",
+        "ponha no pao"
+      ],
+      "extra_information": "O hamburguer surfiu em 2019"
+    }
+  ]
 }

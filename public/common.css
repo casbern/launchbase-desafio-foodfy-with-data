@@ -49,6 +49,10 @@ header .links a {
   color: var(--color-black);
 }
 
+.active {
+  font-weight: bold;
+}
+
 /* === Footer === */
 
 footer {

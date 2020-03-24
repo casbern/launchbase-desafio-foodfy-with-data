@@ -17,14 +17,6 @@
   margin-bottom: 5px;
 }
 
-.admin-wrapper a {
-  color: var(--color-purple);
-  font-size: 16px;
-  font-weight: bold;
-  letter-spacing: 0.1px;
-  text-decoration: none;
-}
-
 .admin-wrapper input, textarea {
   display: block;
   border: 1px solid  #DDDDDD;
@@ -36,11 +28,10 @@
   color: var(--color-darker-grey);
   font-weight: bold;
   outline: none;
-  margin-bottom: 5px;
 }
 
 .admin-wrapper .item {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .admin-wrapper textarea {
@@ -48,7 +39,7 @@
   width: 100%;
 }
 
-.admin-wrapper button {
+.save-recipe {
   background-color: var(--color-purple);
   color: white;
   border-radius: 4px;
@@ -60,15 +51,22 @@
   outline: none;
 }
 
+.add-ingredient, .add-step{
+  color: var(--color-purple);
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.1px;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 30px;
+}
+
 .admin-header {
   background-color: var(--color-black);
 }
 
 .admin-logo {
   padding-left: 17%;
-}
-
-#about.active, #recipes.active {
-  font-weight: bold;
 }
 

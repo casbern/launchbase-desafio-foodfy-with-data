@@ -10,30 +10,36 @@
 
 <h3>Criando receita</h3>
 
-<button type="submit">Salvar receita</button>
+<button type="submit" class="save-recipe">Salvar receita</button>
 
 <div class="item">
-<div>Imagem da receita</div>
-<input type="url" name="recipe_avatar">
+<div>Imagem da receita
+<input type="url" name="recipe_avatar" placeholder="http://">
+</div>
 </div>
 
-<div class="item">
-<div>Ingredientes</div>
-<input type="text" name="ingredients">
-<a href="#">Adicionar novo ingrediente</a>
+<div class="item" id="ingredients">
+<div class="ingredient">Ingredientes
+<input type="text" name="ingredients[]" value="">
 </div>
+</div>
+<button type="button" class="add-ingredient">Adicionar novo ingrediente</button>
+
+<div class="item" id="steps">
+<div class="step">Modo de preparo
+<input type="text" name="preparation[]" value="">
+</div>
+</div>
+<button type="button" class="add-step">Adicionar novo passo</button>
 
 <div class="item">
-<div>Modo de preparo</div>
-<input type="text" name="preparation">
-<a href="#">Adicionar novo passo</a>
-</div>
-
-<div class="item">
-<div>Informações adicionais</div>
+<div>Informações adicionais
 <textarea name="extra_information"></textarea>
+</div>
 </div>
 </form>
 
+<script src="/admin/add-ingredients.js"></script>
+<script src="/admin/add-steps.js"></script>
 
 {% endblock %}

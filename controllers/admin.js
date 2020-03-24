@@ -35,22 +35,22 @@ exports.post = function(req, res) {
     id = 1
   }
 
-  // data.recipes.push({
-  //   id,
-  //   recipe_avatar,
-  //   ingredients,
-  //   preparation,
-  //   extra_information
-  // })
+  data.recipes.push({
+    id,
+    recipe_avatar,
+    ingredients,
+    preparation,
+    extra_information
+  })
 
-  // fs.writeFile("data.json", JSON.stringify(data, null, 2), function (err) {
-  //   if (err) {
-  //     return res.send("Write file error")
-  //   }
-  //   return res.redirect("/recipes")
-  // })
+  fs.writeFile("data.json", JSON.stringify(data, null, 2), function (err) {
+    if (err) {
+      return res.send("Write file error")
+    }
+    return res.redirect("/recipes")
+  })
 
-  return res.send(req.body)
+  //return res.send(req.body)
 }
 
 exports.show = function(req, res) {
