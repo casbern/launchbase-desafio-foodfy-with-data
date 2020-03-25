@@ -105,11 +105,7 @@ exports.put = function(req, res) {
   if(!foundRecipe) {
     return res.send("Recipe was not found!")
   }
-
-  if(foundRecipe) {
-    return res.send("Recipe was found!")
-  }
-
+  
     const recipe = {
       ...foundRecipe,
       ...req.body,

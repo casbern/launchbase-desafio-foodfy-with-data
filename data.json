@@ -3,16 +3,13 @@
     {
       "id": 1,
       "recipe_avatar": "http://google.com",
-      "recipe_name": "torta",
+      "recipe_name": "torta de palmito",
       "recipe_author": "maria",
       "ingredients": [
-        "pao",
-        "farinha"
+        "pao,farinha"
       ],
       "preparation": [
-        "juntar tudo",
-        "misturar",
-        "assar"
+        "juntar tudo,misturar,assar"
       ],
       "extra_information": "mto gostoso"
     }
