@@ -1,16 +1,18 @@
 {
   "recipes": [
-    
     {
       "id": 1,
-      "recipe_avatar": "http://glovo.com",
-      "recipe_name": "torta de maca",
+      "recipe_avatar": "http://google.com",
+      "recipe_name": "torta",
       "recipe_author": "maria",
       "ingredients": [
+        "pao",
         "farinha"
       ],
       "preparation": [
-        "junta tudo e mexe"
+        "juntar tudo",
+        "misturar",
+        "assar"
       ],
       "extra_information": "mto gostoso"
     }
