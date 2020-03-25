@@ -6,36 +6,47 @@
   <link rel="stylesheet" href="/admin/create.css">
 {% endblock %}
 
-<form action="/admin/recipes" method="post">
+<form action="/admin/recipes?_method=PUT" method="POST">
 
-<h3>Criando receita</h3>
+<h3>Editar Receita</h3>
 
-<button type="submit" class="save-recipe">Editar receita</button>
+<button type="submit" class="btn btn-save">Salvar receita</button>
+<button type="submit" class="btn btn-delete">Deletar</button>
 
 <div class="item">
-<div>Imagem da receita
+<div>Imagem da receita</div>
 <input type="url" name="recipe_avatar" placeholder="http://">
 </div>
+
+<div class="item">
+<div>Nome da Receita</div>
+<input type="text" name="recipe_name" placeholder="Ex: Torta de Maça">
+</div>
+
+<div class="item">
+<div>Autor da Receita</div>
+<input type="text" name="recipe_author" placeholder="Ex: João Silva">
 </div>
 
 <div class="item" id="ingredients">
-<div class="ingredient">Ingredientes
+<div>Ingredientes</div>
+<div class="ingredient">
 <input type="text" name="ingredients[]" value="">
 </div>
 </div>
 <button type="button" class="add-ingredient">Adicionar novo ingrediente</button>
 
 <div class="item" id="steps">
-<div class="step">Modo de preparo
+<div>Modo de preparo</div>
+<div class="step">
 <input type="text" name="preparation[]" value="">
 </div>
 </div>
 <button type="button" class="add-step">Adicionar novo passo</button>
 
 <div class="item">
-<div>Informações adicionais
+<div>Informações adicionais</div>
 <textarea name="extra_information"></textarea>
-</div>
 </div>
 </form>
 

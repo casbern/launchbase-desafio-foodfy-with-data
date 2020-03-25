@@ -47,16 +47,26 @@
   width: 100%;
 }
 
-.save-recipe {
-  background-color: var(--color-purple);
+.btn {
   color: white;
   border-radius: 4px;
   font-size: 16px;
+  font-weight: bold;
   line-height: 26px;
-  padding: 4px 8px;
+  letter-spacing: 1px;
+  padding: 8px 16px;
   float: right;
   cursor: pointer;
   outline: none;
+}
+
+.btn-save {
+  background-color: var(--color-purple);
+}
+
+.btn-delete {
+  background-color: var(--color-red);
+  margin-right: 10px;
 }
 
 .add-ingredient, .add-step{

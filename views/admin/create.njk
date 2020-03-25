@@ -6,30 +6,26 @@
   <link rel="stylesheet" href="/admin/create.css">
 {% endblock %}
 
-<form action="/admin/recipes" method="post">
+<form action="/admin/recipes" method="POST">
 
-<h3>Criando uma receita</h3>
+<h3>Criar receita</h3>
 
-<button type="submit" class="save-recipe">Salvar receita</button>
+<button type="submit" class="btn btn-save">Salvar receita</button>
 
 <div class="item">
-<div>Imagem da receita
+<div>Imagem da receita</div>
 <input type="url" name="recipe_avatar" placeholder="http://">
 </div>
-</div>
 
 <div class="item">
-<div>Nome da Receita
+<div>Nome da Receita</div>
 <input type="text" name="recipe_name" placeholder="Ex: Torta de Maça">
 </div>
-</div>
 
 <div class="item">
-<div>Autor da Receita
+<div>Autor da Receita</div>
 <input type="text" name="recipe_author" placeholder="Ex: João Silva">
 </div>
-</div>
-
 
 <div class="item" id="ingredients">
 <div>Ingredientes</div>
@@ -48,9 +44,8 @@
 <button type="button" class="add-step">Adicionar novo passo</button>
 
 <div class="item">
-<div>Informações adicionais
+<div>Informações adicionais</div>
 <textarea name="extra_information"></textarea>
-</div>
 </div>
 </form>
 
