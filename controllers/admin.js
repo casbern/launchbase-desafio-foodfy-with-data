@@ -92,7 +92,6 @@ exports.edit = function(req, res) {
 
 exports.put = function(req, res) {
   const {id} = req.body
-  console.log(req.body)
   let index = 0
 
   const foundRecipe = data.recipes.find(function (recipe, foundIndex) {
@@ -105,7 +104,14 @@ exports.put = function(req, res) {
   if(!foundRecipe) {
     return res.send("Recipe was not found!")
   }
-  
+
+  console.log("foundRecipe")
+  console.log(foundRecipe)
+
+  console.log("req.body")
+  console.log(req.body)
+
+
     const recipe = {
       ...foundRecipe,
       ...req.body,
