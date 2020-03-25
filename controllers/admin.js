@@ -28,8 +28,6 @@ exports.post = function(req, res) {
     extra_information
   } = req.body
 
-  console.log(req.body)
-
   const lastRecipe = data.recipes[data.recipes.length - 1]
   let id
 

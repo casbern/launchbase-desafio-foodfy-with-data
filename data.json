@@ -1,35 +1,3 @@
 {
-  "recipes": [
-    {
-      "id": 1,
-      "recipe_avatar": "https://assets.biggreenegg.eu/app/uploads/2019/03/28145521/topimage-classic-hamburger-2019m04-800x534.jpg",
-      "recipe_name": "Hamburguer",
-      "recipe_author": "Maria da Silva",
-      "ingredients": [
-        "Pão",
-        "Queijo",
-        "Carne"
-      ],
-      "preparation": [
-        "Corte o pão",
-        "Coloque os ingredientes dentro"
-      ],
-      "extra_information": "Hamburguer é uma receita muito antiga e gostoso."
-    },
-    {
-      "id": 2,
-      "recipe_avatar": "http://globo.com",
-      "recipe_name": "torta de maca",
-      "recipe_author": "joao",
-      "ingredients": [
-        "maca",
-        "fdfd"
-      ],
-      "preparation": [
-        "fdfd",
-        "fdfd"
-      ],
-      "extra_information": "fdfdfd"
-    }
-  ]
+  "recipes": []
 }
