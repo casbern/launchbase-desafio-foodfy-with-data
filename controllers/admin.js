@@ -90,11 +90,9 @@ exports.edit = function(req, res) {
   return res.render("admin/edit", {recipe})
 }
 
-
-
-
 exports.put = function(req, res) {
   const {id} = req.body
+  console.log(id)
   let index = 0
 
   const foundRecipe = data.recipes.find(function (recipe, foundIndex) {
@@ -104,9 +102,20 @@ exports.put = function(req, res) {
     }
   })
 
+  console.log(foundRecipe)
+
+  if(!foundRecipe) {
+    return res.send("Recipe was not found!")
+  }
+
+  if(foundRecipe) {
+    return res.send("Recipe was found!")
+  }
+
     const recipe = {
       ...foundRecipe,
-      ...req.body
+      ...req.body,
+      id: Number(req.body.id)
     }
 
     data.recipes[index] = recipe
@@ -114,7 +123,7 @@ exports.put = function(req, res) {
     fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {
       if(err) return res.send("Write error!")
   
-      return res.redirect(`/recipes/${id}`)
+      return res.redirect(`/admin/recipes/${id}`)
     })
 }
 
