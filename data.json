@@ -2,7 +2,7 @@
   "recipes": [
     {
       "id": 1,
-      "recipe_avatar": "http://google.com",
+      "recipe_avatar": "http://google.coms",
       "recipe_name": "torta de palmito",
       "recipe_author": "maria",
       "ingredients": [
@@ -12,6 +12,20 @@
         "juntar tudo,misturar,assar"
       ],
       "extra_information": "mto gostoso"
+    },
+    {
+      "id": 2,
+      "recipe_avatar": "http://http://gmail.com teste",
+      "recipe_name": "teste",
+      "recipe_author": "teste",
+      "ingredients": [
+        "teste123",
+        "teste123"
+      ],
+      "preparation": [
+        "teste,teste"
+      ],
+      "extra_information": "teste"
     }
   ]
 }

@@ -33,7 +33,9 @@
 <div class="item" id="ingredients">
 <div>Ingredientes</div>
 <div class="ingredient">
-<input type="text" name="ingredients[]" value="{{recipe.ingredients}}">
+{% for ingredient in recipe.ingredients %}
+<input type="text" name="ingredients[]" value="{{ingredient}}">
+{% endfor %}
 </div>
 </div>
 <button type="button" class="add-ingredient">Adicionar novo ingrediente</button>
