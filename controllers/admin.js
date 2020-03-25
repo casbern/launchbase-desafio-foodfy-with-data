@@ -105,11 +105,11 @@ exports.put = function(req, res) {
     return res.send("Recipe was not found!")
   }
 
-  console.log("foundRecipe")
-  console.log(foundRecipe)
+  // console.log("foundRecipe") //* for debugging purposes
+  // console.log(foundRecipe)
 
-  console.log("req.body")
-  console.log(req.body)
+  // console.log("req.body")
+  // console.log(req.body)
 
 
     const recipe = {
