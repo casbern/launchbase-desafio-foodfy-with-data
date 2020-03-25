@@ -15,6 +15,21 @@
         "Coloque os ingredientes dentro"
       ],
       "extra_information": "Hamburguer é uma receita muito antiga e gostoso."
+    },
+    {
+      "id": 2,
+      "recipe_avatar": "http://globo.com",
+      "recipe_name": "torta de maca",
+      "recipe_author": "joao",
+      "ingredients": [
+        "maca",
+        "fdfd"
+      ],
+      "preparation": [
+        "fdfd",
+        "fdfd"
+      ],
+      "extra_information": "fdfdfd"
     }
   ]
 }
