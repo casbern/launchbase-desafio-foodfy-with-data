@@ -60,7 +60,7 @@
   outline: none;
 }
 
-.btn-save {
+.btn-save, .btn-edit {
   background-color: var(--color-purple);
 }
 
