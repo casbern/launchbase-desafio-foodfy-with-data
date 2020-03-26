@@ -71,21 +71,6 @@
         "Para servir fica bonito com salada, ou abuse da criatividade."
       ],
       "extra_information": ""
-    },
-    {
-      "id": 4,
-      "recipe_avatar": "https://images.unsplash.com/photo-1561758033-d89a9ad46330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
-      "recipe_name": "Hamburguer",
-      "recipe_author": "Aline Silva",
-      "ingredients": [
-        "teste",
-        "teste"
-      ],
-      "preparation": [
-        "teste",
-        "teste"
-      ],
-      "extra_information": ""
     }
   ]
 }
