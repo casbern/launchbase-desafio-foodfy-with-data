@@ -12,7 +12,7 @@
 <h3>Editar Receita</h3>
 
 <button type="submit" class="btn btn-save">Salvar receita</button>
-<form id="form-delete" method="post" action="/recipes?_method=DELETE">
+<form id="form-delete" method="post" action="/admin/recipes?_method=DELETE">
   <input type="hidden" name="id" value={{ recipe.id }}>
   <button class="btn btn-delete" type="submit">Deletar</button>
 </form>
