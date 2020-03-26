@@ -5,10 +5,13 @@ a {
 .avatar {
   height: 280px;
   border-radius: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .admin-wrapper div.main-title {
   margin-top: 50px;
+  margin-bottom: 10px;
   font-size: 36px;
   text-align: center;
 }
@@ -41,4 +44,5 @@ a {
   color: var(--color-darker-grey);
   line-height: 28px;
   text-align: justify;
+  margin-bottom: 50px;
 }

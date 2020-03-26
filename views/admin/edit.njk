@@ -56,6 +56,11 @@
 </div>
 </form>
 
+<form id="form-delete" method="post" action="/recipes?_method=DELETE">
+  <input type="hidden" name="id" value={{ recipe.id }}>
+  <button type="submit">Deletar</button>
+</form>
+
 <script src="/admin/add-ingredients.js"></script>
 <script src="/admin/add-steps.js"></script>
 

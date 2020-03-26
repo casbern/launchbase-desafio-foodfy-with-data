@@ -3,7 +3,7 @@ const fs = require("fs")
 
 
 exports.index = function(req, res) {
-  return res.send("I am the index page. I show all recipes list.")
+  return res.render("admin/index", {recipes: data.recipes})
 }
 
 exports.create = function(req, res) {
@@ -12,12 +12,6 @@ exports.create = function(req, res) {
 
 exports.post = function(req, res) {
   const keys = Object.keys(req.body)
-
-  for(key of keys) {
-    if (req.body[key] == "") {
-      return res.send("Please, fill all the gaps")
-    }
-  }
 
   let {
     recipe_avatar,
@@ -51,7 +45,7 @@ exports.post = function(req, res) {
     if (err) {
       return res.send("Write file error")
     }
-    return res.redirect("/recipes")
+    return res.redirect(`/admin/recipes/${id}`)
   })
 }
 
@@ -128,5 +122,17 @@ exports.put = function(req, res) {
 }
 
 exports.delete = function(req, res) {
-  return res.send("I will delete a recipe")
+  const {id} = req.body
+
+  const filteredRecipes = data.recipes.filter(function (recipe) {
+    return recipe.id != id
+  })
+
+  data.recipes = filteredRecipes
+
+  fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {
+    if(err) return res.send("Write error!")
+
+    return res.redirect("/admin/recipes") 
+  })
 }
