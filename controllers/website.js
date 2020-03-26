@@ -1,4 +1,4 @@
-const recipes = require("../data.js")
+const recipes = require("../data.json")
 
 exports.index = function(req, res) {
   return res.render("index", { items: recipes.slice(0,6) } )

@@ -12,8 +12,10 @@
 <h3>Editar Receita</h3>
 
 <button type="submit" class="btn btn-save">Salvar receita</button>
-<button type="submit" class="btn btn-delete">Deletar</button>
-
+<form id="form-delete" method="post" action="/recipes?_method=DELETE">
+  <input type="hidden" name="id" value={{ recipe.id }}>
+  <button class="btn btn-delete" type="submit">Deletar</button>
+</form>
 
 <div class="item">
 <div>Imagem da receita</div>
@@ -54,11 +56,6 @@
 <div>Informações adicionais</div>
 <textarea name="extra_information">{{recipe.extra_information}}</textarea>
 </div>
-</form>
-
-<form id="form-delete" method="post" action="/recipes?_method=DELETE">
-  <input type="hidden" name="id" value={{ recipe.id }}>
-  <button type="submit">Deletar</button>
 </form>
 
 <script src="/confirmation.js"></script>
