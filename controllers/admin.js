@@ -122,11 +122,15 @@ exports.put = function(req, res) {
 }
 
 exports.delete = function(req, res) {
+  console.log("delete button was clicked")
   const {id} = req.body
+  console.log(req.body)
 
   const filteredRecipes = data.recipes.filter(function (recipe) {
     return recipe.id != id
   })
+
+  console.log(filteredRecipes)
 
   data.recipes = filteredRecipes
 
