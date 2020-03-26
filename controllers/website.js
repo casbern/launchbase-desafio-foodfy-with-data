@@ -1,7 +1,7 @@
-const recipes = require("../data.json")
+const data = require("../data.json")
 
 exports.index = function(req, res) {
-  return res.render("index", { items: recipes.slice(0,6) } )
+  return res.render("index", { items: data.recipes.slice(0,6) } )
 }
 
 exports.about = function(req, res) {
@@ -9,7 +9,7 @@ exports.about = function(req, res) {
 }
 
 exports.recipes = function(req, res) {
-  return res.render("recipes", { items: recipes })
+  return res.render("recipes", { items: data })
 }
 
 exports.recipe = function(req, res) {

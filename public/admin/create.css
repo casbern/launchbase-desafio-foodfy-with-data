@@ -66,6 +66,9 @@
 
 .btn-delete {
   background-color: var(--color-red);
+}
+
+.btn-save {
   margin-right: 10px;
 }
 
