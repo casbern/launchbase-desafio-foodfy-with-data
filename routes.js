@@ -9,7 +9,7 @@ module.exports = routes
 routes.get('/', websiteRoutes.index) 
 routes.get('/about', websiteRoutes.about)
 routes.get('/recipes', websiteRoutes.recipes)
-routes.get('/recipes/:index', websiteRoutes.recipe)
+routes.get('/recipes/:id', websiteRoutes.recipe)
 
 // ADMINISTRATIVE AREA
 routes.get("/admin/recipes", adminRoutes.index)

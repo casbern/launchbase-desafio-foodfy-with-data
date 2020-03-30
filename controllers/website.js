@@ -14,9 +14,9 @@ exports.recipes = function(req, res) {
 
 exports.recipe = function(req, res) {
 
-  const { index: recipeIndex } = req.params
+  const { id: recipeId } = req.params
   
-  const recipe = data.recipes[recipeIndex]
+  const recipe = data.recipes[recipeId]
   
   if (!recipe) return res.send('Recipe not found!')
   
